@@ -10,13 +10,13 @@ const layer8 = document.querySelector('.layer-8');
 window.addEventListener('scroll', () => {
     let scrollPosition = window.pageYOffset;
     if (scrollPosition <= 550) {
+        console.log(scrollPosition)
         layer1.style.transform = `translateY(${scrollPosition * .99}px)`
         layer2.style.transform = `translateY(${scrollPosition * .9}px)`
         layer3.style.transform = `translateY(${scrollPosition * .7}px)`
         layer4.style.transform = `translateY(${scrollPosition * .55}px)`
         layer5.style.transform = `translateY(${scrollPosition * .15}px)`
         layer6.style.transform = `translateY(${scrollPosition * .05}px)`
-        // layer7.style.transform = `translateY(${scrollPosition * -.15}px)`
         layer7.style.transform = `translateY(${scrollPosition * -.15}px)`
         // layer8.style.transform = `translateY(${scrollPosition * -.3}px)`
     }
