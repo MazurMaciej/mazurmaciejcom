@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maciej Mazur - junior frontend developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class='wrapper'>
-        <div class='header'>
-            <div class='layer-0'></div>
+        <header class='header'>
             <div class='layer-1'></div>
             <div class='layer-2'></div>
             <div class='layer-3'></div>
@@ -17,33 +17,31 @@
             <div class='layer-5'></div>
             <div class='layer-6'></div>
             <div class='layer-7'></div>
+            <div class='layer-8'></div>
+            <div class='container'>
+                <div class='header__icon-box'>
+                    <a class='header__icon-box__github' href='https://github.com/MazurMaciej' target='blank'>
+                        <img src="./assets/img/github_icon.svg" class='header__icon-box__github-icon' alt="">
+                    </a>
+                    <a class='header__icon-box__linkedin' href='https://www.linkedin.com/in/mazurmaciej10/' target='blank'>
+                        <img src="./assets/img/linkedin_icon.svg" class='header__icon-box__github-icon' alt="">
+                    </a>
+                </div>
+                <h2 class='header__subtitle'>Hi, my name is Maciej</h2>
+                <h1 class='header__title'>I’m a junior front-end developer</h1>
+            </div>
+        </header>
+        <div class='about-me'>
+            <div class='container'>
+                <h2 class='about-me__title'>About me</h2>
+                <p class='about-me__description'>Hello, my name is Maciej Mazur. I'm a front-end developer with strong business management competitions in digital projects. As a project manager, I worked through eight years and I decided that specialize in programming. Welcome to my personal webpage, where I share my projects.</p>
+                <h3 class='about-me__subtitle'>My skills</h3>
+            </div>
         </div>
-        <div class='wrapper2'>
-            info
+        <div class='my-works'>
+
         </div>
     </div>
-    <script>
-    window.addEventListener('scroll', ()=> {
-        const layer0 = document.querySelector('.layer-0');
-        const layer1 = document.querySelector('.layer-1');
-        const layer2 = document.querySelector('.layer-2');
-        const layer3 = document.querySelector('.layer-3');
-        const layer4 = document.querySelector('.layer-4');
-        const layer5 = document.querySelector('.layer-5');
-        const layer6 = document.querySelector('.layer-6');
-        const layer7 = document.querySelector('.layer-7');
-
-        let scrollPosition = window.pageYOffset;
-
-        layer0.style.transform = `translateY(${scrollPosition*.99}px)`
-        layer1.style.transform = `translateY(${scrollPosition*.9}px)`
-        layer2.style.transform = `translateY(${scrollPosition*.7}px)`
-        layer3.style.transform = `translateY(${scrollPosition*.4}px)`
-        layer4.style.transform = `translateY(${scrollPosition*.15}px)`
-        layer5.style.transform = `translateY(${scrollPosition*.05}px)`
-        layer6.style.transform = `translateY(${scrollPosition*-.15}px)`
-        layer7.style.transform = `translateY(${scrollPosition*-.3}px)`
-    })
-    </script>
+<script src="./js/script.js"></script>
 </body>
 </html>

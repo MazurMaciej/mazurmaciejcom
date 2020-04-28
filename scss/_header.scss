@@ -1,15 +1,58 @@
 .header {
-	background-image: url(../assets/img/l9.png);
+	background-image: url(../assets/img/layer0.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100vw;
-	height: 160vh;
+	height: 120vh;
 	position: relative;
 	background-attachment: fixed;
 	overflow: hidden;
+	margin-bottom: -50px;
+
+	&__icon-box {
+		margin: 40px auto 0 auto;
+		position: relative;
+
+		&__linkedin {
+			padding-left: 20px;
+		}
+
+		&__github {
+			cursor: pointer;
+			width: 48px;
+			height: 48px;
+
+			&-icon {
+				// transition: .5s;
+				// border-radius: 50%;
+
+				&:hover {
+					// background-color: #061d20;
+				}
+			}
+		}
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		font-family: active;
+		font-size: 45px;
+		letter-spacing: 2.6px;
+		text-align: center;
+		margin: 100px 0 0 0;
+	}
+
+	&__title {
+		animation: textAnimation 3s;
+		animation-fill-mode: forwards;
+		font-weight: 300;
+		font-size: 25px;
+		letter-spacing: 1.44px;
+		text-align: center;
+	}
 }
 
-.layer-0,
+.layer-8,
 .layer-1,
 .layer-2,
 .layer-3,
@@ -20,45 +63,73 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100vw;
-	height: 160vh;
+	height: 140vh;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.layer-0 {
-	background-image: url(../assets/img/l8.png);
-}
-
 .layer-1 {
-	background-image: url(../assets/img/l7.png);
+	background-image: url(../assets/img/layer1.png);
 }
 
 .layer-2 {
-	background-image: url(../assets/img/l6.png);
+	background-image: url(../assets/img/layer2.png);
 }
 
 .layer-3 {
-	background-image: url(../assets/img/l5.png);
+	background-image: url(../assets/img/layer3.png);
 }
 
 .layer-4 {
-	background-image: url(../assets/img/l4.png);
+	background-image: url(../assets/img/layer4.png);
 }
 
 .layer-5 {
-	background-image: url(../assets/img/l3.png);
+	background-image: url(../assets/img/layer5.png);
 }
 
 .layer-6 {
-	background-image: url(../assets/img/l2.png);
+	background-image: url(../assets/img/layer6.png);
 }
 
 .layer-7 {
-	background-image: url(../assets/img/l1.png);
+	background-image: url(../assets/img/layer7.png);
 }
 
-.wrapper2 {
+.layer-8 {
+	background-image: url(../assets/img/layer8.png);
+	height: 160vh;
+}
+
+.about-me {
 	height: 100vh;
-	background-color: #ddd;
+	background: linear-gradient(180deg, #061d20 0%, #11252e 100%);
+	font-family: Active;
+	z-index: 2;
+
+	&__title {
+		font-family: Active;
+		font-size: 55px;
+		letter-spacing: 3.18px;
+		line-height: 67px;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+
+	&__description {
+		font-family: Muli;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: 0.92px;
+		line-height: 22px;
+	}
+
+	&__subtitle {
+		font-family: Muli;
+		font-size: 35px;
+		font-weight: bold;
+		letter-spacing: 2.02px;
+		line-height: 44px;
+	}
 }
