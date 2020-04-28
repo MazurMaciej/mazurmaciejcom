@@ -1,0 +1,142 @@
+.myworks {
+	height: 100vh;
+
+	&__bg {
+		margin-top: -180px;
+		width: 100%;
+	}
+
+	&__title {
+		color: #000;
+		font-family: Active;
+		font-size: 5.5rem;
+		letter-spacing: 3.18px;
+		line-height: 67px;
+		margin-bottom: 35px;
+		text-transform: uppercase;
+		text-shadow: #99c2cd 2px 1px;
+	}
+}
+
+.project {
+	color: #000;
+	margin-bottom: 110px;
+	position: relative;
+	height: 90vh;
+
+	&__box {
+		color: #1a1a1a;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+
+		&-title {
+			align-items: center;
+			display: flex;
+			font-size: 3rem;
+			letter-spacing: 1.73px;
+			line-height: 38px;
+			margin-bottom: 50px;
+
+			&-left {
+				justify-content: flex-end;
+			}
+
+			&-number {
+				color: #000000;
+				font-family: Active;
+				font-size: 180px;
+				letter-spacing: 15.88px;
+				opacity: 0.06;
+			}
+
+			&-firstline {
+				font-weight: 500;
+			}
+		}
+		&-description {
+			&-left {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+			}
+
+			&-text {
+				font-size: 1.6rem;
+				font-weight: 400;
+				letter-spacing: 0.92px;
+				line-height: 20px;
+				width: 40%;
+				&-left {
+					text-align: right;
+				}
+			}
+			&-techlist {
+				font-weight: 600;
+				margin: 40px 0 10px 0;
+			}
+			&-link {
+				color: #000;
+				display: block;
+				font-size: 16px;
+				font-weight: 800;
+				letter-spacing: 0.92px;
+				margin-top: 24px;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__background {
+		align-items: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		bottom: 0;
+		display: flex;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 30%;
+		&-first {
+			background-image: url(../assets/img/projects/first/project-bg.jpg);
+		}
+
+		&-second {
+			background-image: url(../assets/img/projects/second/project-bg.jpg);
+			left: 0;
+			right: initial;
+		}
+
+		&-third {
+			background-image: url(../assets/img/projects/third/project-bg.jpg);
+		}
+
+		&-fourth {
+			background-image: url(../assets/img/projects/fourth/project-bg.png);
+			left: 0;
+			right: initial;
+		}
+
+		&-image {
+			width: 100%;
+
+			&-right {
+				margin-left: -50%;
+			}
+
+			&-left {
+				margin-left: 50%;
+			}
+		}
+	}
+}
+
+width: 16px;
+content: " ";
+background-image: url(/img/border-left3.png);
+position: absolute;
+left: -16px;
+top: -6px;
+height: 20px;
