@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
         layer5.style.transform = `translateY(${scrollPosition * .15}px)`
         layer6.style.transform = `translateY(${scrollPosition * .05}px)`
         layer7.style.transform = `translateY(${scrollPosition * -.15}px)`
-        // layer8.style.transform = `translateY(${scrollPosition * -.3}px)`
+        layer8.style.transform = `translateY(${scrollPosition * -.1}px)`
     }
 })
 
