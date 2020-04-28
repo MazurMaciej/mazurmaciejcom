@@ -1,13 +1,15 @@
 @font-face {
 	font-family: active;
-	src: url(/assets/font/active-regular-webfont.ttf);
+	src: url(../assets/font/active-regular-webfont.ttf);
+}
+
+html {
+	font-size: 10px;
 }
 
 body {
-	padding: 0;
-	margin: 0;
-	font-family: Muli;
 	color: #fff;
+	font-family: Muli;
 }
 
 .container {

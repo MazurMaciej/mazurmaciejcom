@@ -1,10 +1,10 @@
-const layer1 = document.querySelector('.layer-1');
-const layer2 = document.querySelector('.layer-2');
-const layer3 = document.querySelector('.layer-3');
-const layer4 = document.querySelector('.layer-4');
-const layer5 = document.querySelector('.layer-5');
-const layer6 = document.querySelector('.layer-6');
-const layer7 = document.querySelector('.layer-7');
+const layer1 = document.querySelector('.header__layer-1');
+const layer2 = document.querySelector('.header__layer-2');
+const layer3 = document.querySelector('.header__layer-3');
+const layer4 = document.querySelector('.header__layer-4');
+const layer5 = document.querySelector('.header__layer-5');
+const layer6 = document.querySelector('.header__layer-6');
+const layer7 = document.querySelector('.header__layer-7');
 
 
 window.addEventListener('scroll', () => {
