@@ -9,7 +9,7 @@ const layer8 = document.querySelector('.layer-8');
 
 window.addEventListener('scroll', () => {
     let scrollPosition = window.pageYOffset;
-    if (scrollPosition <= 350) {
+    if (scrollPosition <= 550) {
         layer1.style.transform = `translateY(${scrollPosition * .99}px)`
         layer2.style.transform = `translateY(${scrollPosition * .9}px)`
         layer3.style.transform = `translateY(${scrollPosition * .7}px)`
