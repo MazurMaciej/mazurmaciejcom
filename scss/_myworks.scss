@@ -2,7 +2,7 @@
 	// height: 100vh;
 
 	&__bg {
-		margin-top: -180px;
+		margin-top: -10px;
 		width: 100%;
 	}
 
@@ -114,7 +114,7 @@
 		}
 
 		&-fourth {
-			background-image: url(../assets/img/projects/fourth/project-bg.png);
+			background-image: url(../assets/img/projects/fourth/project-bg.jpg);
 			left: 0;
 			right: initial;
 		}
@@ -132,11 +132,3 @@
 		}
 	}
 }
-
-// width: 16px;
-// content: " ";
-// background-image: url(/img/border-left3.png);
-// position: absolute;
-// left: -16px;
-// top: -6px;
-// height: 20px;

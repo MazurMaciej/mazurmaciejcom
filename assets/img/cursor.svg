@@ -1,18 +1,5 @@
-@font-face {
-	font-family: active;
-	src: url(../assets/font/active-regular-webfont.ttf);
-}
-
-html {
-	font-size: 10px;
-}
-
-body {
-	color: #fff;
-	font-family: Muli;
-	font-weight: 300;
-	// cursor: url(/assets/img/cursor.svg), auto;
-	cursor: <svg width="33px" height="40px" viewBox="0 0 33 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="40px" viewBox="0 0 33 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
     <title>navigation</title>
     <desc>Created with Sketch.</desc>
@@ -25,10 +12,4 @@ body {
             </g>
         </g>
     </g>
-</svg>, auto
-}
-
-.container {
-	margin: 0 auto;
-	max-width: 1250px;
-}
+</svg>
