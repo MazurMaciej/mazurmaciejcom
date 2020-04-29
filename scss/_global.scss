@@ -1,5 +1,5 @@
 @font-face {
-	font-family: active;
+	font-family: 'active';
 	src: url(../assets/font/active-regular-webfont.ttf);
 }
 
@@ -9,12 +9,29 @@ html {
 
 body {
 	color: #fff;
-	font-family: Muli;
+	font-family: 'Muli';
 	font-weight: 300;
-	cursor: url(../assets/img/cursor.svg), auto;
+	cursor: url(/assets/img/cursor2.png), auto;
 }
 
 .container {
 	margin: 0 auto;
 	max-width: 1250px;
+}
+
+.cursor {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	pointer-events: none;
+}
+
+.expand {
+	animation: cursorExpand .5s forwards;
+	border: 2px solid #707fb7;
+}
+
+.welcomeTitle {
+	animation: welcomeText 4s alternate;
 }

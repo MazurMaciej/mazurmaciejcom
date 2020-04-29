@@ -12,14 +12,31 @@
 	&__icon-box {
 		margin: 40px auto 0 auto;
 		position: relative;
+		&__github {
+			&-icon {
+				border-radius: 50%;
+				transition: .5s;
+				&:hover {
+					background-color: #707fb7;
+				}
+			}
+		}
 
 		&__linkedin {
 			padding-left: 20px;
+
+			&-icon {
+				border-radius: 50%;
+				transition: .5s;
+				&:hover {
+					background-color: #707fb7;
+				}
+			}
 		}
 	}
 
 	&__subtitle {
-		font-family: active;
+		font-family: 'active';
 		font-size: 4.5rem;
 		letter-spacing: .26rem;
 		margin: 100px 0 19px 0;

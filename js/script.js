@@ -1,3 +1,9 @@
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
+
 const layer1 = document.querySelector('.header__layer-1');
 const layer2 = document.querySelector('.header__layer-2');
 const layer3 = document.querySelector('.header__layer-3');
@@ -20,6 +26,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
+//Cursor effect
 const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {

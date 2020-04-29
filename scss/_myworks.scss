@@ -1,20 +1,7 @@
 .myworks {
-	// height: 100vh;
-
-	&__bg {
-		margin-top: -10px;
-		width: 100%;
-	}
-
 	&__title {
 		color: #000;
-		font-family: Active;
-		font-size: 5.5rem;
-		letter-spacing: 3.18px;
-		line-height: 67px;
-		margin-bottom: 35px;
-		text-transform: uppercase;
-		text-shadow: #99c2cd 2px 1px;
+		@include all-sections__title;
 	}
 }
 
@@ -23,13 +10,23 @@
 	margin-bottom: 110px;
 	position: relative;
 	height: 90vh;
+	&:hover .project__box-title-number {
+		color: #707fb7;
+		opacity: 0.8;
+	}
+
+	&__left-container {
+		display: flex;
+		flex-direction: row-reverse;
+		height: 100%;
+	}
 
 	&__box {
-		color: #1a1a1a;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		justify-content: center;
+		@include project__box;
+
+		&-left {
+			width: 45%;
+		}
 
 		&-title {
 			align-items: center;
@@ -39,16 +36,13 @@
 			line-height: 38px;
 			margin-bottom: 50px;
 
-			&-left {
-				justify-content: flex-end;
-			}
-
 			&-number {
 				color: #000000;
-				font-family: Active;
+				font-family: 'Active';
 				font-size: 180px;
 				letter-spacing: 15.88px;
 				opacity: 0.06;
+				transition: 2s;
 			}
 
 			&-firstline {
@@ -56,20 +50,15 @@
 			}
 		}
 		&-description {
-			&-left {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-end;
-			}
-
 			&-text {
 				font-size: 1.6rem;
 				font-weight: 400;
 				letter-spacing: 0.92px;
 				line-height: 20px;
 				width: 40%;
+
 				&-left {
-					text-align: right;
+					width: 100%;
 				}
 			}
 			&-techlist {
@@ -77,14 +66,12 @@
 				margin: 40px 0 10px 0;
 			}
 			&-link {
-				color: #000;
-				display: block;
-				font-size: 16px;
-				font-weight: 800;
-				letter-spacing: 0.92px;
-				margin-top: 24px;
-				text-decoration: none;
-				text-transform: uppercase;
+				@include project__link;
+				width: 9%;
+				&-left {
+					@include project__link;
+					width: 20%;
+				}
 			}
 		}
 	}
@@ -121,7 +108,7 @@
 
 		&-image {
 			width: 100%;
-
+			margin-left: 50%;
 			&-right {
 				margin-left: -50%;
 			}
@@ -131,4 +118,14 @@
 			}
 		}
 	}
+}
+
+.projectAnimation-nth {
+	animation: projectMoveUp 15s infinite alternate;
+	animation-timing-function: linear;
+}
+
+.projectAnimation-th {
+	animation: projectMoveDown 15s infinite alternate;
+	animation-timing-function: linear;
 }

@@ -1,52 +1,9 @@
-.cursor {
-	width: 20px;
-	height: 20px;
-	border: 1px solid white;
-	border-radius: 50%;
-	position: absolute;
-	// transition-duration: 200ms;
-	transition-timing-function: ease-out;
-	animation: cursorAnim .5s infinite alternate;
-	pointer-events: none;
-}
-
-.cursor::after {
-	content: "";
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	border: 8px solid gray;
-	border-radius: 50%;
-	opacity: .5;
-	top: -8px;
-	left: -8px;
-	animation: cursorAnim2 .5s infinite alternate;
-}
-
-@keyframes cursorAnim {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(.7);
-	}
-}
-
-@keyframes cursorAnim2 {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(.4);
-	}
-}
-
-@keyframes cursorAnim3 {
+@keyframes cursorExpand {
 	0% {
 		transform: scale(1);
 	}
 	50% {
-		transform: scale(3);
+		transform: scale(2.5);
 	}
 	100% {
 		transform: scale(1);
@@ -54,7 +11,56 @@
 	}
 }
 
-.expand {
-	animation: cursorAnim3 .5s forwards;
-	border: 1px solid red;
+@keyframes welcomeText {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes projectMoveUp {
+	0% {
+		transform: translateY(30px);
+	}
+
+	25% {
+		transform: translateY(15px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	75% {
+		transform: translateY(-15px);
+	}
+
+	100% {
+		transform: translateY(-30px);
+	}
+}
+
+@keyframes projectMoveDown {
+	0% {
+		transform: translateY(-30px);
+	}
+
+	25% {
+		transform: translateY(-15px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	75% {
+		transform: translateY(15px);
+	}
+
+	100% {
+		transform: translateY(30px);
+	}
 }
