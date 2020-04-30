@@ -13,7 +13,23 @@
 
 @keyframes welcomeText {
 	0% {
-		transform: translateY(300%);
+		transform: translateY(600%);
+	}
+
+	69% {
+		transform: translateY(349%);
+	}
+
+	70% {
+		transform: translateY(348%);
+	}
+
+	85% {
+		transform: translateY(175%);
+	}
+
+	99% {
+		transform: translateY(1%);
 	}
 
 	100% {
