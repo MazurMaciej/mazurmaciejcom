@@ -16,6 +16,10 @@
 		position: absolute;
 		top: 51%;
 		transform: translateX(-50%);
+
+		@include breakpoint(newMobile) {
+			top: 57%;
+		}
 	}
 	&__box {
 		margin-top: -10%;

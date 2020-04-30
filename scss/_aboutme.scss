@@ -33,17 +33,30 @@
 		font-family: 'Muli';
 		justify-content: space-between;
 		margin-top: 68px;
+		@include breakpoint(tablet) {
+			flex-direction: column;
+		}
 		&-left {
 			display: flex;
+			@include breakpoint(newMobile) {
+				flex-direction: column;
+				align-items: center;
+			}
 
 			&-photo {
 				height: 208px;
 				width: 230px;
+				@include breakpoint(newMobile) {
+					margin-bottom: 50px;
+				}
 			}
 
 			&-container {
 				margin-bottom: 150px;
 				margin-left: 50px;
+				@include breakpoint(newMobile) {
+					margin-bottom: 100px;
+				}
 
 				&-title {
 					font-size: 25px;
@@ -64,12 +77,27 @@
 			@include breakpoint(HDDesktop) {
 				margin-left: 30px;
 			}
+			@include breakpoint(tablet) {
+				display: flex;
+				justify-content: center;
+			}
+			@include breakpoint(newMobile) {
+				align-items: center;
+				flex-direction: column;
+				margin-bottom: 50px;
+			}
 			&-container {
 				display: flex;
+				@include breakpoint(tablet) {
+					margin-left: 20px;
+				}
 
 				&:first-child {
 					margin-bottom: 54px;
 					margin-left: -15px;
+					@include breakpoint(mobileonly) {
+						margin-left: 0px;
+					}
 				}
 				&-first {
 					height: 77px;

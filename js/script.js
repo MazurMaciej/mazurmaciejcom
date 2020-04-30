@@ -31,9 +31,11 @@ window.addEventListener('scroll', () => {
 
     if (scrollPosition <= 555) handleAllHeaderMovement(scrollPosition);
 
-    myProjectsArray.forEach(project => {
-        handleProjectImageMovement(project, screenResolution, scrollPosition)
-    })
+    if (scrollPosition > 400) {
+        myProjectsArray.forEach(project => {
+            handleProjectImageMovement(project, screenResolution, scrollPosition)
+        })
+    }
 });
 
 //--Function that handle layers animation on header
