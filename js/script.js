@@ -26,8 +26,8 @@ const myProjectsArray = [...document.querySelectorAll('.project')];
 
 //--Main Event Listener Function
 window.addEventListener('scroll', () => {
-    let scrollPosition = window.pageYOffset;
-    let screenResolution = window.innerHeight;
+    const scrollPosition = window.pageYOffset;
+    const screenResolution = window.innerHeight;
 
     if (scrollPosition <= 555) handleAllHeaderMovement(scrollPosition);
 
@@ -54,9 +54,9 @@ const handleHeaderMovementLayer = (layerToAnimation, speed, scrollPosition) => {
 
 //--Function that animate single photo on project section
 const handleProjectImageMovement = (project, screenResolution, scrollPosition) => {
-    let distanceToTop = project.offsetTop - (screenResolution / 4);
-    let projectHeight = project.offsetHeight;
-    let distanceToBottom = project.offsetTop + projectHeight;
+    const distanceToTop = project.offsetTop - (screenResolution / 4);
+    const projectHeight = project.offsetHeight;
+    const distanceToBottom = project.offsetTop + projectHeight;
 
     if (scrollPosition > distanceToTop && scrollPosition < distanceToBottom) {
         project.querySelector('img').style.transform = `translateY(${-(scrollPosition - distanceToTop) * - .17}px)`
