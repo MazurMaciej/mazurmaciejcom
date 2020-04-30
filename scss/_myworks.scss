@@ -109,6 +109,8 @@
 		&-image {
 			width: 100%;
 			margin-left: 50%;
+			transition: 1.5s;
+
 			&-right {
 				margin-left: -50%;
 			}
@@ -120,12 +122,12 @@
 	}
 }
 
-.projectAnimation-nth {
-	animation: projectMoveUp 15s infinite alternate;
-	animation-timing-function: linear;
-}
+// .projectAnimation-nth {
+// 	animation: projectMoveUp 15s infinite alternate;
+// 	animation-timing-function: linear;
+// }
 
-.projectAnimation-th {
-	animation: projectMoveDown 15s infinite alternate;
-	animation-timing-function: linear;
-}
+// .projectAnimation-th {
+// 	animation: projectMoveDown 15s infinite alternate;
+// 	animation-timing-function: linear;
+// }

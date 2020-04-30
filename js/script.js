@@ -2,47 +2,64 @@
 window.addEventListener('load', () => {
     document.querySelector('.loader').className += ' hidden'
     setTimeout(() => {
-        document.querySelector('.header__subtitle').classList.add('welcomeTitle');
-        document.querySelector('.header__title').classList.add('welcomeTitle');
+        document.querySelector('.header__textbox').classList.add('welcomeTitle');
     }, 200);
 });
-
-
 
 //Cursor effect
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
     cursor.setAttribute('style', `top: ${e.pageY - 10}px; left:${e.pageX - 10}px`)
-})
+});
 
 document.addEventListener('click', () => {
     cursor.classList.add('cursor__expand');
-
     setTimeout(() => {
         cursor.classList.remove('cursor__expand');
     }, 500)
-})
+});
 
+//Header & projects animations
+//--Variables
+const layersToAnimation = [...document.querySelectorAll('.header__layer')];
+const myProjectsArray = [...document.querySelectorAll('.project')];
 
-
-//Header animation
-const layer1 = document.querySelector('.header__layer-1');
-const layer2 = document.querySelector('.header__layer-2');
-const layer3 = document.querySelector('.header__layer-3');
-const layer4 = document.querySelector('.header__layer-4');
-const layer5 = document.querySelector('.header__layer-5');
-const layer6 = document.querySelector('.header__layer-6');
-const layer7 = document.querySelector('.header__layer-7');
-
+//--Main Event Listener Function
 window.addEventListener('scroll', () => {
     let scrollPosition = window.pageYOffset;
-    if (scrollPosition <= 550) {
-        layer1.style.transform = `translateY(${scrollPosition * .99}px)`
-        layer2.style.transform = `translateY(${scrollPosition * .9}px)`
-        layer3.style.transform = `translateY(${scrollPosition * .7}px)`
-        layer4.style.transform = `translateY(${scrollPosition * .55}px)`
-        layer5.style.transform = `translateY(${scrollPosition * .15}px)`
-        layer6.style.transform = `translateY(${scrollPosition * .05}px)`
-        layer7.style.transform = `translateY(${scrollPosition * -.15}px)`
-    }
+    let screenResolution = window.innerHeight;
+
+    if (scrollPosition <= 555) handleAllHeaderMovement(scrollPosition);
+
+    myProjectsArray.forEach(project => {
+        handleProjectImageMovement(project, screenResolution, scrollPosition)
+    })
 });
+
+//--Function that handle layers animation on header
+const handleAllHeaderMovement = (scrollPosition) => {
+    handleHeaderMovementLayer(layersToAnimation[0], .99, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[1], .9, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[2], .7, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[3], .55, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[4], .15, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[5], .05, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[6], -.15, scrollPosition)
+}
+
+//--Function helper to calculate one layer animation
+const handleHeaderMovementLayer = (layerToAnimation, speed, scrollPosition) => {
+    layerToAnimation.style.transform = `translateY(${scrollPosition * speed}px)`
+}
+
+//--Function that animate single photo on project section
+const handleProjectImageMovement = (project, screenResolution, scrollPosition) => {
+    let distanceToTop = project.offsetTop - (screenResolution / 4);
+    let projectHeight = project.offsetHeight;
+    let distanceToBottom = project.offsetTop + projectHeight;
+
+    if (scrollPosition > distanceToTop && scrollPosition < distanceToBottom) {
+        project.querySelector('img').style.transform = `translateY(${-(scrollPosition - distanceToTop) * - .17}px)`
+    }
+};
+

@@ -13,15 +13,11 @@
 
 @keyframes welcomeText {
 	0% {
-		transform: translateY(60vh);
-	}
-
-	50% {
-		transform: translateY(30vh);
+		opacity: 0;
 	}
 
 	100% {
-		transform: translateY(0);
+		opacity: 1;
 	}
 }
 
