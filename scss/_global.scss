@@ -25,13 +25,14 @@ body {
 	border-radius: 50%;
 	position: absolute;
 	pointer-events: none;
-}
 
-.expand {
-	animation: cursorExpand .5s forwards;
-	border: 2px solid #707fb7;
+	&__expand {
+		animation: cursorExpand .5s forwards;
+		border: 2px solid #707fb7;
+		z-index: 2;
+	}
 }
 
 .welcomeTitle {
-	animation: welcomeText 4s alternate;
+	animation: welcomeText 3s alternate;
 }

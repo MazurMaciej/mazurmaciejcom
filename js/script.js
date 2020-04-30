@@ -1,9 +1,31 @@
-window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
-    loader.className += " hidden"; // class "loader hidden"
+//Preloader
+window.addEventListener('load', () => {
+    document.querySelector('.loader').className += ' hidden'
+    setTimeout(() => {
+        document.querySelector('.header__subtitle').classList.add('welcomeTitle');
+        document.querySelector('.header__title').classList.add('welcomeTitle');
+    }, 200);
 });
 
 
+
+//Cursor effect
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute('style', `top: ${e.pageY - 10}px; left:${e.pageX - 10}px`)
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add('cursor__expand');
+
+    setTimeout(() => {
+        cursor.classList.remove('cursor__expand');
+    }, 500)
+})
+
+
+
+//Header animation
 const layer1 = document.querySelector('.header__layer-1');
 const layer2 = document.querySelector('.header__layer-2');
 const layer3 = document.querySelector('.header__layer-3');
@@ -11,7 +33,6 @@ const layer4 = document.querySelector('.header__layer-4');
 const layer5 = document.querySelector('.header__layer-5');
 const layer6 = document.querySelector('.header__layer-6');
 const layer7 = document.querySelector('.header__layer-7');
-
 
 window.addEventListener('scroll', () => {
     let scrollPosition = window.pageYOffset;
@@ -24,19 +45,4 @@ window.addEventListener('scroll', () => {
         layer6.style.transform = `translateY(${scrollPosition * .05}px)`
         layer7.style.transform = `translateY(${scrollPosition * -.15}px)`
     }
-})
-
-//Cursor effect
-const cursor = document.querySelector('.cursor');
-
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-})
-
-document.addEventListener('click', () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500)
-})
+});

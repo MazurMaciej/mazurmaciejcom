@@ -18,17 +18,17 @@
             <div class='header__layer header__layer-6'></div>
             <div class='header__layer header__layer-7'></div>
             <div class='header__layer header__layer-8'></div>
-            <div class='container'>
-                <div class='header__icon-box'>
-                    <a class='header__icon-box__github' href='https://github.com/MazurMaciej' target='_blank'>
-                        <img src="./assets/img/github_icon.svg" class='header__icon-box__github-icon' alt="">
-                    </a>
-                    <a class='header__icon-box__linkedin' href='https://www.linkedin.com/in/mazurmaciej10/' target='_blank'>
-                        <img src="./assets/img/linkedin_icon.svg" class='header__icon-box__github-icon' alt="">
-                    </a>
-                </div>
-                <h2 class='header__subtitle welcomeTitle'>Hi, my name is Maciej</h2>
-                <h1 class='header__title welcomeTitle'>I’m a junior front-end developer</h1>
+            <div class='header__icon-box'>
+                <a class='header__icon-box__github' href='https://github.com/MazurMaciej' target='_blank'>
+                    <img src="./assets/img/github_icon.svg" class='header__icon-box__github-icon' alt="">
+                </a>
+                <a class='header__icon-box__linkedin' href='https://www.linkedin.com/in/mazurmaciej10/' target='_blank'>
+                    <img src="./assets/img/linkedin_icon.svg" class='header__icon-box__github-icon' alt="">
+                </a>
+            </div>
+            <div class='container header__textbox'>
+                <h2 class='header__subtitle'>Hi, my name is Maciej</h2>
+                <h1 class='header__title'>I’m a junior front-end developer</h1>
             </div>
         </header>
         <div class='about-me'>
@@ -167,11 +167,14 @@
                 </div>
             </div>
         </footer>
-        <div class="cursor"></div>
-        <div class="loader">
-           <span class="loader-smaller"><span class="loader-inner"></span></span>
-        </div>
     </div>
+        <div class='cursor'></div>
+        <div class='loader'>
+            <div class='loader__box'>
+            <span class='loader__box-smaller'><span class='loader__box-inner'></span></span>
+           </div>
+           <p class='loader__text'>Loading...</p>
+        </div>
 <script src="./js/script.js"></script>
 </body>
 </html>
