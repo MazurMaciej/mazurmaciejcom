@@ -1,5 +1,8 @@
 html {
 	font-size: 10px;
+	@include breakpoint(HDDesktop) {
+		font-size: 15px;
+	}
 }
 
 body {
@@ -7,6 +10,9 @@ body {
 	font-family: 'Muli';
 	font-weight: 300;
 	cursor: url(../assets/img/cursor2.png), auto;
+}
+.wrapper {
+	margin-bottom: -20px;
 }
 
 .container {

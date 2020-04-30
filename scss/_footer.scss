@@ -2,7 +2,7 @@
 	background-image: url(../assets/img/footer.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 70vh;
+	height: 72vh;
 	padding-bottom: 100px;
 	width: 100%;
 
@@ -22,7 +22,7 @@
 		font-size: 1.6rem;
 		font-weight: 300;
 		letter-spacing: 1.15px;
-		line-height: 25px;
+		line-height: 2.5rem;
 		margin-bottom: 60px;
 		width: 40%;
 
@@ -39,6 +39,7 @@
 			&-icon {
 				border-radius: 50%;
 				transition: .5s;
+				@include imgIconSizeForHD;
 				&:hover {
 					background-color: #707fb7;
 				}
@@ -51,6 +52,7 @@
 			&-icon {
 				border-radius: 50%;
 				transition: .5s;
+				@include imgIconSizeForHD;
 				&:hover {
 					background-color: #707fb7;
 				}

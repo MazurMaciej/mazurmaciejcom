@@ -10,6 +10,7 @@
 	margin-bottom: 110px;
 	position: relative;
 	height: 90vh;
+
 	&:hover .project__box-title-number {
 		color: #707fb7;
 		opacity: 0.8;
@@ -33,7 +34,7 @@
 			display: flex;
 			font-size: 3rem;
 			letter-spacing: 1.73px;
-			line-height: 38px;
+			line-height: 3.8rem;
 			margin-bottom: 50px;
 
 			&-number {
@@ -54,7 +55,7 @@
 				font-size: 1.6rem;
 				font-weight: 400;
 				letter-spacing: 0.92px;
-				line-height: 20px;
+				line-height: 2rem;
 				width: 40%;
 
 				&-left {
@@ -68,9 +69,17 @@
 			&-link {
 				@include project__link;
 				width: 9%;
+				@include breakpoint(HDDesktop) {
+					font-size: 24px;
+					width: 12%;
+				}
 				&-left {
 					@include project__link;
 					width: 20%;
+					@include breakpoint(HDDesktop) {
+						font-size: 24px;
+						width: 28%;
+					}
 				}
 			}
 		}

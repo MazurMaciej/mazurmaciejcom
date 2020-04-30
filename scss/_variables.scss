@@ -4,7 +4,11 @@
 }
 
 @mixin breakpoint($point) {
-	@if $point == bigDesktop {
+	@if $point == HDDesktop {
+		@media (min-width: 1920px) {
+			@content;
+		}
+	} @else if $point == bigDesktop {
 		@media (min-width: 1431px) {
 			@content;
 		}

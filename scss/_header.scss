@@ -5,7 +5,7 @@
 	background-size: cover;
 	height: 120vh;
 	overflow: hidden;
-	padding-bottom: 50px;
+	padding-bottom: 55px;
 	position: relative;
 	width: 100%;
 
@@ -24,6 +24,7 @@
 			&-icon {
 				border-radius: 50%;
 				transition: .5s;
+				@include imgIconSizeForHD;
 				&:hover {
 					background-color: #707fb7;
 				}
@@ -36,6 +37,8 @@
 			&-icon {
 				border-radius: 50%;
 				transition: .5s;
+				@include imgIconSizeForHD;
+
 				&:hover {
 					background-color: #707fb7;
 				}
@@ -50,6 +53,9 @@
 		margin: 17% 0 19px 0;
 		text-align: center;
 		text-transform: uppercase;
+		@include breakpoint(HDDesktop) {
+			margin: 27% 0 19px 0;
+		}
 	}
 
 	&__title {
