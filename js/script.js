@@ -47,7 +47,7 @@ const handleAllHeaderMovement = (scrollPosition) => {
     handleHeaderMovementLayer(layersToAnimation[4], .7, scrollPosition)
     handleHeaderMovementLayer(layersToAnimation[5], .55, scrollPosition)
     handleHeaderMovementLayer(layersToAnimation[6], .15, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[7], .2, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[7], .25, scrollPosition)
     handleHeaderMovementLayer(layersToAnimation[8], -.15, scrollPosition)
 }
 
