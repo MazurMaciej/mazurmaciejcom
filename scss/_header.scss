@@ -1,6 +1,6 @@
 .header {
 	background-attachment: fixed;
-	background-image: url(../assets/img/layer0.png);
+	background-image: url(../assets/img/layer0.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 120vh;
@@ -81,7 +81,6 @@
 		left: 0;
 		z-index: 2;
 	}
-
 	&__layer-1 {
 		background-image: url(../assets/img/layer1.png);
 	}
@@ -108,11 +107,19 @@
 
 	&__layer-7 {
 		background-image: url(../assets/img/layer7.png);
-		height: 149vh;
 	}
 
 	&__layer-8 {
 		background-image: url(../assets/img/layer8.png);
+	}
+
+	&__layer-9 {
+		background-image: url(../assets/img/layer9.png);
+		height: 149vh;
+	}
+
+	&__layer-10 {
+		background-image: url(../assets/img/layer10.png);
 		height: 160vh;
 	}
 }

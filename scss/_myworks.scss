@@ -2,6 +2,7 @@
 	&__title {
 		color: #000;
 		@include all-sections__title;
+		@include hoverMyWorksTitle;
 	}
 }
 
@@ -60,7 +61,7 @@
 				font-size: 180px;
 				letter-spacing: 15.88px;
 				opacity: 0.06;
-				transition: 2s;
+				transition: 4s;
 			}
 
 			&-firstline {
@@ -91,7 +92,7 @@
 			}
 			&-link {
 				@include project__link;
-				width: 13%;
+				width: 15%;
 				@include breakpoint(HDDesktop) {
 					font-size: 24px;
 					width: 18%;
@@ -109,15 +110,15 @@
 					width: 40%;
 				}
 				@include breakpoint(mobileonly) {
-					width: 48%;
+					width: 52%;
 				}
 				@include breakpoint(mobilesmall) {
-					width: 58%;
+					width: 66%;
 				}
 
 				&-left {
 					@include project__link;
-					width: 30%;
+					width: 33%;
 					@include breakpoint(HDDesktop) {
 						font-size: 24px;
 						width: 41%;
@@ -135,12 +136,24 @@
 						width: 50%;
 					}
 					@include breakpoint(mobileonly) {
-						width: 60%;
+						width: 62%;
 					}
 					@include breakpoint(mobilesmall) {
-						width: 73%;
+						width: 82%;
 					}
 				}
+			}
+		}
+	}
+
+	&__mobile {
+		display: none;
+		@include breakpoint(tablet) {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			&-img {
+				width: 100%;
 			}
 		}
 	}
@@ -180,16 +193,16 @@
 		}
 
 		&-image {
-			width: 100%;
-			margin-left: 50%;
+			width: 140%;
+			margin-left: 15%;
 			transition: 1.5s;
 
 			&-right {
-				margin-left: -50%;
+				margin-left: -55%;
 			}
 
 			&-left {
-				margin-left: 50%;
+				margin-left: 15%;
 			}
 		}
 	}

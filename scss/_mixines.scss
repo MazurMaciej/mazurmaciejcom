@@ -57,3 +57,30 @@
 		height: 70px;
 	}
 }
+
+@mixin hoverForWhiteTitles {
+	transition: 2s;
+	color: #fff;
+
+	&:hover {
+		opacity: .8;
+		text-shadow: 6px 8px black;
+	}
+}
+
+@mixin hoverMyWorksTitle {
+	transition: 2s;
+
+	&:hover {
+		opacity: .8;
+		text-shadow: 6px 8px white;
+	}
+}
+
+@mixin hoverForTextsOnAboutMe {
+	transition: 2s;
+
+	&:hover {
+		opacity: .6;
+	}
+}

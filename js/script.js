@@ -40,13 +40,15 @@ window.addEventListener('scroll', () => {
 
 //--Function that handle layers animation on header
 const handleAllHeaderMovement = (scrollPosition) => {
-    handleHeaderMovementLayer(layersToAnimation[0], .99, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[1], .9, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[2], .7, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[3], .55, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[4], .15, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[5], .05, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[6], -.15, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[0], 1.2, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[1], 1.1, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[2], .9, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[3], .9, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[4], .7, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[5], .55, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[6], .15, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[7], .2, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[8], -.15, scrollPosition)
 }
 
 //--Function helper to calculate one layer animation
@@ -61,7 +63,7 @@ const handleProjectImageMovement = (project, screenResolution, scrollPosition) =
     const distanceToBottom = project.offsetTop + projectHeight;
 
     if (scrollPosition > distanceToTop && scrollPosition < distanceToBottom) {
-        project.querySelector('img').style.transform = `translateY(${-(scrollPosition - distanceToTop) * - .17}px)`
+        project.querySelector('.project__background-image').style.transform = `translateY(${-(scrollPosition - distanceToTop) * - .17}px)`
     }
 };
 
