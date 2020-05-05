@@ -1,1 +1,1 @@
-# This is repository for my personal webpage mazurmaciej.com. 
+# Hello, my name is Maciej Mazur. I'm a junior front-end developer with strong business management experience in digital projects. After working as a project manager for 8 years, I decided to specialize in programming. Welcome to my personal webpage, where I share my projects.
