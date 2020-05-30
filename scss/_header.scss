@@ -83,10 +83,12 @@
 	}
 	&__layer-1 {
 		background-image: url(../assets/img/layer1.png);
+		background-attachment: fixed;
 	}
 
 	&__layer-2 {
 		background-image: url(../assets/img/layer2.png);
+		background-attachment: fixed;
 	}
 
 	&__layer-3 {

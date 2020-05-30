@@ -40,8 +40,8 @@ window.addEventListener('scroll', () => {
 
 //--Function that handle layers animation on header
 const handleAllHeaderMovement = (scrollPosition) => {
-    handleHeaderMovementLayer(layersToAnimation[0], 1.2, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[1], 1.1, scrollPosition)
+    // handleHeaderMovementLayer(layersToAnimation[0], 1.2, scrollPosition)
+    // handleHeaderMovementLayer(layersToAnimation[1], 1.1, scrollPosition)
     handleHeaderMovementLayer(layersToAnimation[2], .9, scrollPosition)
     handleHeaderMovementLayer(layersToAnimation[3], .9, scrollPosition)
     handleHeaderMovementLayer(layersToAnimation[4], .7, scrollPosition)
