@@ -1,6 +1,9 @@
 .about-me {
 	background: linear-gradient(180deg, #061d20 0%, #11252e 100%);
 	font-family: 'Active';
+	@include breakpoint(bigMobile) {
+		margin-top: -2px;
+	}
 
 	&__bg {
 		margin-bottom: -6px;

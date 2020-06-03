@@ -28,9 +28,7 @@ const myProjectsArray = [...document.querySelectorAll('.project')];
 window.addEventListener('scroll', () => {
     const scrollPosition = window.pageYOffset;
     const screenResolution = window.innerHeight;
-
     if (scrollPosition <= 555) handleAllHeaderMovement(scrollPosition);
-
     if (scrollPosition > 400) {
         myProjectsArray.forEach(project => {
             handleProjectImageMovement(project, screenResolution, scrollPosition)
@@ -40,20 +38,20 @@ window.addEventListener('scroll', () => {
 
 //--Function that handle layers animation on header
 const handleAllHeaderMovement = (scrollPosition) => {
-    // handleHeaderMovementLayer(layersToAnimation[0], 1.2, scrollPosition)
-    // handleHeaderMovementLayer(layersToAnimation[1], 1.1, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[1], .9, scrollPosition)
     handleHeaderMovementLayer(layersToAnimation[2], .9, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[3], .9, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[4], .7, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[5], .55, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[6], .15, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[7], .25, scrollPosition)
-    handleHeaderMovementLayer(layersToAnimation[8], -.15, scrollPosition)
-}
+    handleHeaderMovementLayer(layersToAnimation[3], .7, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[4], .55, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[5], .15, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[6], .25, scrollPosition)
+    handleHeaderMovementLayer(layersToAnimation[7], -.15, scrollPosition)
+};
 
 //--Function helper to calculate one layer animation
 const handleHeaderMovementLayer = (layerToAnimation, speed, scrollPosition) => {
-    layerToAnimation.style.transform = `translateY(${scrollPosition * speed}px)`
+    layerToAnimation.style.transform = `translateY(${scrollPosition * speed}px)`;
+    layerToAnimation.style.webkitTransform = `translateY(${scrollPosition * speed}px)`;
+    layerToAnimation.style.MozTransform = `translateY(${scrollPosition * speed}px)`;
 }
 
 //--Function that animate single photo on project section

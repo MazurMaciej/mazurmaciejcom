@@ -28,6 +28,10 @@
 		@media (max-width: 900px) {
 			@content;
 		}
+	} @else if $point == bigMobile {
+		@media (max-width: 750px) {
+			@content;
+		}
 	} @else if $point == newMobile {
 		@media (max-width: 570px) {
 			@content;
