@@ -18,7 +18,7 @@
 
 @mixin project__link {
 	color: #000;
-	display: block;
+	display: flex;
 	font-size: 16px;
 	font-weight: 800;
 	letter-spacing: 0.92px;
@@ -40,13 +40,10 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
+		margin-left: 10px;
 		width: 19px;
 		height: 18px;
 		transform: rotate(0deg);
-		position: absolute;
-		display: block;
-		right: 0;
-		top: 0;
 		transition: .5s;
 		@include breakpoint(HDDesktop) {
 			top: 6px;

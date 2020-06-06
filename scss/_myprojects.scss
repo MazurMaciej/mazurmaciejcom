@@ -96,55 +96,10 @@
 			}
 			&-link {
 				@include project__link;
-				width: 15%;
-				@include breakpoint(HDDesktop) {
-					font-size: 24px;
-					width: 18%;
-				}
-				@include breakpoint(bigDesktop) {
-					width: 15%;
-				}
-				@include breakpoint(smallerDesktop) {
-					width: 17%;
-				}
-				@include breakpoint(tablet) {
-					width: 25%;
-				}
-				@include breakpoint(newMobile) {
-					width: 40%;
-				}
-				@include breakpoint(mobileonly) {
-					width: 52%;
-				}
-				@include breakpoint(mobilesmall) {
-					width: 66%;
-				}
 
 				&-left {
 					@include project__link;
-					width: 33%;
-					@include breakpoint(HDDesktop) {
-						font-size: 24px;
-						width: 41%;
-					}
-					@include breakpoint(bigDesktop) {
-						width: 33%;
-					}
-					@include breakpoint(smallerDesktop) {
-						width: 36%;
-					}
-					@include breakpoint(tablet) {
-						width: 25%;
-					}
-					@include breakpoint(newMobile) {
-						width: 50%;
-					}
-					@include breakpoint(mobileonly) {
-						width: 62%;
-					}
-					@include breakpoint(mobilesmall) {
-						width: 82%;
-					}
+
 				}
 			}
 		}
